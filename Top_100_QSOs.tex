@@ -1,0 +1,373 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%
+%%
+%%
+%%   Nic Ross 
+%%  <npross@roe.ac.uk>
+%%                                                                                     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[usenatbib]{mn2e}
+%\documentclass[graybox]{svmult}
+
+%%
+%% FOR DOUBLE-SPACE, SINGLE-COLUMN VERSION::
+%%
+%\documentclass[onecolumn]{emulateapj}
+%\linespread{2.6}
+
+\input{format}
+
+\begin{document}
+
+\title[Quasar Top 100]
+{An Observational Overview of Quasars}
+
+\author[N.P. Ross]
+{Nicholas P. Ross$^{1,2}$\\ % \thanks{Email: npross@roe.ac.uk},\\
+$^1$Institute for Astronomy, University of Edinburgh, Royal Observatory, Blackford Hill 
+ Edinburgh EH9 3HJ, United Kingdom\\
+$^2$STFC Ernest Rutherford Fellow\\
+Email: npross@roe.ac.uk\\
+}
+
+\maketitle
+
+\begin{abstract}
+The SDSS-III: Baryon Oscillation Spectroscopic Survey (BOSS) is a 5
+year experiment which obtained first light in late 2009. One of the
+key goals of the BOSS is to obtain spectra of a sample of
+$\sim$150,000 $z>2.2$ quasars, in order to measure baryon acoustic
+oscillations (BAO) in the distribution of the \lyaf\ to provide a
+percent-level measurement of the expansion history of the Universe.
+In this paper, we describe the BOSS quasar target selection algorithms,
+and characterize their success, for the first year of BOSS observations
+only.  The magnitude limit of the BOSS Year One Quasar survey was set
+at $g\leq22.0$ or $r\leq21.85$.  In Year One, the BOSS Quasar Survey
+obtained a total of \hbox{54,909} spectra from an area of 878.1
+deg$^{2}$ (including $\sim40$~deg$^{2}$ of the SDSS deep stripe
+``Stripe 82'') at a mean target density of 62.8 targets deg$^{-2}$.
+Of the \hbox{33,556} unique objects with good quality spectra,
+\hbox{11,149} had redshifts indicative of stellar spectra, and
+\hbox{13,580} we quasars with redshifts of $z\geq2.20$. Over 80\% of
+these quasars (\hbox{11,263}) were spectroscopically confirmed for the
+first time by the BOSS. The $z\geq2.20$ quasar surface density was
+15.46 quasars deg$^{-2}$, with a global efficiency of 26.0\%. However,
+in areas targeted at the nominal survey target density of 40 targets
+deg$^{-2}$, the efficiency rose to $\sim$35\%, ($\sim$14 $z\geq 2.20$
+quasars deg$^{-2}$), with our ``CORE'' selection efficiency being just
+over $\sim$50\% ($\sim$10 $z\geq 2.20$ quasars deg$^{-2}$ from 20
+targets deg$^{-2}$). Finally, we suggest further methods and new,
+non-optical, data that can be utilized, so that as the survey
+progresses, BOSS quasar targeting will improve in efficiency.
+
+\end{abstract}
+
+%\keywords{surveys -  quasars: Lyman-$\alpha$ forest, cosmology: classification techniques}
+\begin{keywords}
+galaxies: clustering -- luminous red galaxies: general -- cosmology: 
+observations -- large-scale structure of Universe.
+\end{keywords}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%%   SECTION 1  SECTION 1  SECTION 1  SECTION 1  SECTION 1  SECTION 1  
+%%   SECTION 1  SECTION 1  SECTION 1  SECTION 1  SECTION 1  SECTION 1  
+%%   SECTION 1  SECTION 1  SECTION 1  SECTION 1  SECTION 1  SECTION 1  
+%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+\cite{Hunt04}
+\citet{Richards06}
+\citet{Croom09a}
+\citet{Croom09b}
+\citet{Degraf10}
+\citet{Glikman11}
+\citet{Glikman11}
+
+Martin's point: {\it (i)} If I had 2-3 slides to present on QSOs for students, what would those be??; {\it (ii)} a list of key things a decent student should know (about e.g. QSOs). {\it (iii)} (and from me!) what's the hook/the new thing here... {\it (iv)} from Joanne, summer school notes. 
+
+What this paper is:  
+General overview of the current state of observational QSO work. 
+Empirical and phenomolgy. 
+
+What this paper is not: 
+Detailed review article. 
+Heavy on interpretation, or the subtitles on many of the measurements/observations. 
+A theoretical work of any sort. 
+
+In Table~\ref{tab:defintions} various definitions are given. 
+\begin{table*}
+    \begin{center}
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{lll}
+      \hline
+      \hline
+    Term  & Definition & Canonical Reference   \\
+      \hline
+    Quasar & Very luminous object with large redshift, most likely & \\  
+                & being powered by gravitational accretion onto a SMBH & \citet{Schmidt63} \\ 
+    SMBH & Supermassive Black hole & \citet{LyndenBell_Rees71}\\
+    Unobscured QSO  &  UV/optically continuum and emission lines from the accretion disk and BLR & \\
+    Obscured QSO     &  UV/optically emission heavily suppressed &\\
+    Type 1 AGN     & Broad (and Narrow) Emission Lines present & \\
+    Type 2 AGN     & Broad Emission Lines absent in a flux spectrum & \\
+    Compton Thick  & AGN with X-ray emission surpressed by $N_{\rm H} \ge 10^{24}$ cm$^{-2}$ & \\
+      Type-11 AGN & Unobscured both in optical and X-ray spectra & \citet{Merloni14} \\
+      Type-22 AGN & Obscured both at X-ray and optical wavelengths & \citet{Merloni14} \\
+      Type-12 AGN & Optically unobscured but have X-ray spectra (or HR) consistent with $N_{\rm H} > 10^{21.5}$ cm$^{-2}$ & \citet{Merloni14} \\ 
+      Type-21 AGN & No X-ray obscuration but no broad lines in the optical spectra or have galaxy optical/UV SED & \citet{Merloni14} \\
+      Seyfert 1.9 & broad component is detected only in the $H\alpha$ line  and not in the higher-order Balmer lines & \citet{Osterbrock79}\\
+      Seyfert 1.8 &  the broad components are very weak but detectable at $H\beta$ as well as $H\alpha$.\\ 
+      Seyfert 1.5 & the strengths of the broad and narrow components in $H\beta$ are compar able. & \\
+     \hline
+    \hline
+    \label{tab:defintions}
+    \end{tabular}
+    \caption{But not only \citep{Schmidt63} }
+    \end{center}
+    \end{table*}
+
+\section{General AGN Names}
+The parent population of flat-spectrum radio-loud Narrow-Line Seyfert 1 galaxies (http://arxiv.org/abs/1504.02772v1)
+
+\section{Photometry} %% (8+1+1+1 = 11)
+\begin{itemize}
+    \item{Point-like in the optical}
+    \item{Extended}
+    \item{Can be (very) blue; UVX}
+    \item{Can be red; Reddening, \citep{Krawczyk15}}
+    \item{Can be very red; high-$z$}
+    \item{Can be very red; Obscured Type 1s \citep{Banerji14}}
+    \item{Can be very red; Weirdos...\citep{Ross6}}
+    \item{Vary; light curves, DRW etc. \citet{MacLeod10, MacLeod11, MacLeod12, MacLeod12_AAS, MacLeod14}}
+\end{itemize}
+  
+    \subsection{X-ray}    
+
+    \subsection{Infra-red}   
+    $\lambda>5\mu$m i.e. dust
+
+    \subsection{Radio} 
+    \begin{itemize}
+      \item{Kratzer et al. }
+      \item{blazars vs. Flat-spectrum radio quasars; e.g. Nakagawa\&Mori, 2013, ApJ, 773, 177 also e.g. Justin Finke talk from AAS (!!)  }
+      \end{itemize}
+
+
+\section{Spectroscopy} %% (9+1+1 = 11)
+\begin{itemize}
+    \item{``Heavily'' redshifted}
+    \item{Broad Emission Lines}
+    \item{Narrow Emission Lines}
+    \item{Permitted emission lines e.g. \lya, \civ, \mgii }
+    \item{Semi-Forbidden emission lines e.g. \ciii } 
+    \item{Forbidden emission lines e.g. \oiii, \nev } 
+    \item{Absorption Lines. Hydrogen, Lyman-$\alpha$ forest}
+    \item{Absorption LInes and Reionization}
+    \item{Absorption Lines. Metals}
+      \item{Double power-law model?? $F_{\nu} = A \nu^{\alpha} + B \nu^{-\alpha}$  \citet{Kishimoto08}}
+\item{Big Blue Bump}
+\item{Little Blue Bump}
+  \item{Composites; \cite{Francis91, VdB01}}
+    \item{We introduce Coronal-Line Forest Active Galactic Nuclei (CLiF AGN), Rose arXiv:1501.02705v1).}
+\end{itemize}
+    \subsection{Objects with ``weird'' spectra''}
+    \begin{itemize}
+      \item{ERQs}
+      \item{Roig's}
+        \item{Post-starburst Quasars}
+    \end{itemize}
+
+
+
+     \subsection{Dual Black Holes}
+     Quasar Pairs??
+
+     \subsection{Broad Absoprtion lines}
+     
+
+\section{Lensing}  %% (2)
+    \begin{itemize}
+      \item{``The Quad''}
+      \item{Japanese group'}
+    \end{itemize}
+
+
+\section{The Luminosity Function} %% (3)
+The QLF is defined as the number density of quasars per unit
+luminosity. It is often described by a double power-law
+\citep[][hereafter, R06]{Boyle00,Croom04,Richards06} of the form
+\begin{equation}
+  \Phi(L, z) = \frac{ \phi_{*}^{(L)} }
+                            {  (L/L^{*})^{\alpha}    +  (L/L^{*})^{\beta}  }
+ \ \,
+ \label{eq:double_powerlaw}
+\end{equation}
+with a characteristic, or break, luminosity $L_{*}$.  An alternative
+definition of this form of the QLF gives the number density of quasars
+per unit magnitude,
+\begin{equation}
+  \Phi(M, z) = \frac{ \phi_{*}^{(M)} }
+       { 10^{0.4{(\alpha +1)[M-M^{*}(z)]}}+10^{0.4{(\beta +1)[M-M^{*}(z) ]}} }
+ \label{eq:double_powerlaw_mag}
+\end{equation}
+The dimensions of $\Phi$ differ in the two conventions.  We have
+followed R06 such that $\alpha$ describes the faint end QLF slope, and
+$\beta$ the bright end slope.  The $\alpha$/$\beta$ convention in some
+other works \citep[e.g.,][]{Croom09b} is in the opposite sense from our 
+definition. Evolution of the QLF can be encoded in the redshift dependence 
+of the break luminosity, $\phi_{*}$, and also potentially in the evolution of
+the power-law slopes.
+
+\begin{itemize}
+  \item{Double Power-law}
+  \item{PLE}
+  \item{Evolution of $M^{*}$ and $\Phi^{*}$}
+  \item{Comparison of the QLF at $z=1, 2, 5$ vs. the galaxy LF}
+  \item{Comparison of the QLF$(z)$ vs. the SFR, sSFR}
+\end{itemize}
+Implications of the QLF, Soltan and/on the ExGal backgrounds....
+What wiggle room is left? Espeically that Xray-Spitzzer cross-correlation measurement...
+
+
+\section{Quasar Clustering} %% (5)
+The 2pt Function; Clustering
+\begin{itemize}
+    \item{$\sim$ few $\times10^{12} M_{\odot}$ to $z\sim2.5$}
+    \item{More-or-less luminosity independent for $L_{rm Bol} \gtrsim10^{45}$ ergs.}
+    \item{Colour Dependence in e.g. SDSS = none}
+    \item{Colour Dependence with $r-W2>6$ gets v. interesting!!}
+    \item{a la obscured vs. unobscured}
+    \item{With Radio Loudness}
+    \item{With X-ray hardnes?!s}
+      \item{DM Haloes of Moderate luminosity AGN}
+%%     
+\end{itemize}
+
+
+\section{Morphology} %% (5) 
+\begin{itemize}
+    \item{At $z\sim0$ \citet{Bahcall97}.}
+    \item{At $z\sim0.5$ (Stripe 82 stuff??)}
+    \item{At $z\sim1$ (Villforth????)}
+    \item{At $z\sim1-2$ }
+    \item{At $z\gtrsim2$ ???}
+\end{itemize}
+
+\section{Scaling Relations} %% (5)
+\begin{itemize}
+    \item{redshift $z\sim0$, classical relations, $M-\sigma$}
+      \item{ \citet{Faber97}, \citet{Magorrian98}, \citet{Ferrarese00}, \citet{Gebhardt00}, \citet{Tremaine02}, \citet{Gultekin09} }
+        %% most cited articles by all of the above...
+    \item{High-mass end, e.g. \citet{McConnell11, McConnell13}}
+    \item{Pseduo-bulges etc. }
+    \item{Pseduo-bulges etc. and correcting for e.g. orientation/inclination effects, 
+e.g. Bellovary14 }
+    \item{\citet{Tremaine02} and \citet{Novak13}}
+    \item{Mullaney's work??}
+\end{itemize}
+
+\section{Other Relations} %% (5)
+\begin{itemize}
+    \item{``Type 2'' QSOs are not (extra) massive enough to produce the difference in e.g. 250$\mu$m SF difference.... Chen, Hickox et al.}
+
+\end{itemize}
+
+
+\section{Cosmo Backgrounds} %% (3) 
+\begin{itemize}
+  \item{X-ray}
+    \item{Optical}
+      \item{CIB (Marco Viero :-)   }
+      \item{FIR}
+      \item{Gamma-ray, $\gamma$-ray; 80\% of Fermi photons from MW; 10\% from Pooint sources, 10\% background, including the cosmo gamma-ray background. e.g. 100 MeV to 820 GeV. arXiv:1410.3696; Blazars account fo 50\% of the EGB. 
+Blazars+Extragalactic Background light (which is what exactly?!) responsible for cutt-off in EGB spectrum e.g. Ajello+15; Blazars plus radio gals plus SFgals account for essentially all the EGB (can put constraints on e.g. DM cross-sections.)}
+\item{Fermi actually gives a pretty-to-very good feel for the blazar luminosity function and it's evolution -look this up!!}
+\end{itemize}
+
+
+\section{QSO Timescalesd}
+\begin{itemize}
+  \item{X-ray}
+\end{itemize}
+
+
+
+\section{General Arguments} %% (3) 
+\begin{itemize}
+    \item{Soltan}
+    \item{Shankar Continuity??}
+    \item{QLF+Clustering equals lifetime?!?}
+      \item{$M_{\rm BH} = f \frac{R V^{2}}{G}$}
+\end{itemize}
+
+
+
+\section{To Be Confirmed} %% (1)
+\begin{itemize}
+  \item{Emit Gravitational Waves}
+\end{itemize}
+
+
+%%
+%% This might be a completely different paper, but... 
+%%
+\section{Connection to DSFGs} 
+Having made a relatively comprehensive list of the observed phenomenology...\\
+%%Commander Powell: Talk to the bomb. You have to talk to it, Doolittle. Teach it PHENOMENOLOGY. 
+is there a connection to  DSFGs...???\\
+\begin{itemize}
+  \item{Connection of QSOs to Dusty Star-formaig Galaxies...}
+    \item{aka how wrong is the Hopkins 07 picture...}
+\end{itemize}
+
+
+
+%    \begin{figure}
+%      \includegraphics[height=8.0cm,width=8.0cm]
+%      {pdf/SDSS_Quasar_Nofz.pdf}
+%      \centering
+%      \caption[he selection of $z \sim 0.7$ LRGs using the SDSS $riz$-bands]
+%              {The selection of $z \sim 0.7$ LRGs using the SDSS $riz$-bands.}
+%      \label{fig:fig1}
+%    \end{figure}
+
+
+
+%    \begin{equation}
+%      \label{equ:simple_prob}
+%      dP = n \, dV.
+%    \end{equation}
+    
+%    \begin{eqnarray}
+%      \xi_{LS}(s) &=& 1 + \left(\frac{N_{rd}}{N} \right)^{2} \frac{DD(s)}{RR(s)} -
+%      2   \left( \frac{N_{rd}}{N} \right) \frac{DR(s)}{RR(s)} \\
+%      &\equiv&  \frac{DD(s)-2DR(s)+RR(s)}{RR(s)},
+%      \label{lseq}
+%    \end{eqnarray}
+
+%% http://www-astro.physics.ox.ac.uk/~kmb/latex_colour.html
+%{\color{red} ...bit of LaTeX text...}
+%an example of making an equation the colour DarkSeaGreen (rather a sophisticated shade, I think) one types the following:
+%\begin{equation}
+%{\color{DarkSeaGreen} x = \log_{10} (\nu/\rm MHz) }
+%\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\bibliographystyle{apj}
+\bibliographystyle{mn2e}
+\bibliography{../../tester_mnras}
+
+\end{document}

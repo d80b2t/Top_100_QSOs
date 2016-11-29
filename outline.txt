@@ -1,0 +1,40 @@
+
+
+1. Introduction
+
+2. Data
+   2.1 Input Catalogue (e.g. Croom04)
+   2.2 Spectroscopic observarions (C04)
+   
+   
+Completeness (3., e.g. C04)
+	- Checks using MIR?
+	- Checks using Worseck et al.?
+	- 
+
+	- Morphological, Photometric, Coverage, Spectroscopic
+
+	- "Photometric completeness contours in the (bJ, z) plane"
+
+
+k-corrections
+	-  
+
+
+The QLF
+	- Estimator...
+
+
+Power-law fits...
+
+
+
+Key Figures:
+    Coverage Map
+
+    Number counts
+
+    Photometric completeness contours in the (bJ, z) plane
+
+    
+    
